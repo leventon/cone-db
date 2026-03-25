@@ -1,0 +1,40 @@
+\documentclass{abstract}
+
+% Bibliography
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    doi=true,
+    sorting=none,
+    sortcites=true,
+    maxbibnames=2,
+    minbibnames=1,
+    maxcitenames=2,
+    mincitenames=1,
+    citestyle=numeric-comp,
+    giveninits=true,
+    isbn=false,
+    date=year
+]{biblatex}
+\addbibresource{abstract.bib}
+
+% For email linking
+\usepackage{hyperref}
+
+\title{ENFP429 NIST Abstract}
+
+\author{Jacob Myers}
+
+\keywords{}
+\begin{document}
+\maketitle
+\section{Abstract}
+The overarching goal of the wider project with which we are helping is the conversion of old physical data from flame tests performed in the past to a digital, organized, and searchable format. The digitization was done with AI tools that went through scanned files and pulled what data it could, storing it in data files. One of our main goals as students assisting in this project is to make sure that all of the data files relating to a certain test match with each other, in addition to matching with the original scanned file. We look for discrepancies between AI determined and stored data, discrepancies between original document and stored data, and corrupted or outlier data that would be illogical to have. Additionally, we add identification to the data file. This comes in the form of the material ID, which uses a nested naming structure to make the files as searchable as possible, the testing conditions of the specific test, and what number of multiple tests with the same conditions a given test was. These all get combined into a name representing the specific features of a given test. The above is the process known as SmURFing, done through the NIST SmURF editor. This parsing, as well as the accessing of the editor and the uploading of the files to a centralized source, has additionally served as a way for us to learn some functionality of GitHub and the ability to collaboratively work on files therein, a skill that may be useful to have. Some files couldn’t be properly parsed, that is, weren’t able to be properly added to the SmURF editor. An additional goal of ours is to identify some of these tests by finding the larger files that they are contained in and searching through the scanned files. These specific files can then be more manually reviewed by members of NIST. Up to this point, an additional goal of ours has also been to better understand flames and flame/cone calorimetry tests as a whole. This was achieved through a set of slides, which we read on our own and which were later better explained to us. These give us a broader knowledge of the topic overall, in addition to helping us identify unusual or discrepant data. We are also getting experience using LaTeX, which is an important skill at any level of higher education, up to this point through the creation and submission of this abstract.  
+
+ \cite{babrauskas1982development, brown1988cone,emil1989flammability}
+
+
+\section{References}
+\printbibliography[heading=none]
+
+\end{document}
